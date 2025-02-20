@@ -1,5 +1,5 @@
 
-{ config, pkgs, ... }:
+{ confit, pkgs, ... }:
 
 {
   imports =
@@ -24,26 +24,30 @@
    xwayland.enable = true;
  };
 
-
+services.xserver.videoDrivers = ["nvidia"];
 nix.settings.experimental-features = [ "nix-command" "flakes"];
 
-
-
+#programs.steam.enable = true;
+#programs.steam.gamescopeSession.enable = true;
+ # programs.gamemode.enable = true;
 
 
 
   environment.sessionVariables = {
   # WLR_NO_HARDWARE_CURSORS = "1";
    NIXOS_OZONE_WL = "1";
+   STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+      "\${HOME}/.steam/root/compatibilitytools.d";
  };
 
   hardware = {
-    opengl.enable = true;
-
+    graphics.enable = true;
     nvidia.modesetting.enable = true;
+    nvidia.open = true;
 };
 
 services.flatpak.enable = true;
+
 
 
 
@@ -93,6 +97,8 @@ hardware.bluetooth.enable = true;
 
 
 
+
+
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -117,6 +123,7 @@ hardware.bluetooth.enable = true;
 
   programs.firefox.enable = true;
 
+  
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
@@ -152,12 +159,20 @@ hardware.bluetooth.enable = true;
     flatpak
     luajit
     blender
-    godot_4
     hyprlock
     hypridle
+    gcc
+    protonup
+    tmux
+    lmms
+    pulseaudio
+    python311Packages.pyinstaller
+    copyq
+    libreoffice-qt6
+
  ];
 
-
+}
 
 
 
