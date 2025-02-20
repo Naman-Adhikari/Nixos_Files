@@ -11,5 +11,6 @@ Kitty and Rofi:
 
 
 Neovim:
-![image](https://github.com/user-attachments/assets/e8bfb434-02ef-4557-be2f-f926bc863fa4)
+![image](https://github.com/user-attachments/assets/11f4c4e5-9c66-4c08-9eae-eab3543344cc)
+
 
