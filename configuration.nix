@@ -134,7 +134,6 @@ hardware.bluetooth.enable = true;
     obs-studio
     vlc
     audacity
-    vesktop
     neofetch
     jp2a
     hyprland
@@ -147,7 +146,6 @@ hardware.bluetooth.enable = true;
     imv
     github-desktop
     git
-    discord
     pywal    
     obsidian
     inotify-tools
