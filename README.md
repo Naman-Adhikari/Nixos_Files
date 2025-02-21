@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ac890a12-21cc-4fd8-bd01-d447ad445d9e)MY nixos config file and my  Hyprland config files.
+MY nixos config file and my  Hyprland config files.
 
 Mainly here so that i can reproduce my system efficiently.
 
