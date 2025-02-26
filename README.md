@@ -30,6 +30,10 @@ Waybar and mpvpaper (v.3)
 Kitty (v.3)
 ![image](https://github.com/user-attachments/assets/b4284866-5e1e-4d85-ac4b-1a4465973dcb)
 
+Ghostty (v.1)
+![image](https://github.com/user-attachments/assets/1df7bfe9-6a8e-4e52-8ee8-654fe576cdb4)
+
+
 
 
 
