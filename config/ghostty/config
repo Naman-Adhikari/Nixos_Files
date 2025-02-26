@@ -1,0 +1,53 @@
+#Run `ghostty +show-config --default --docs` to view a list of
+font-family = nerd
+font-size = 12
+
+background            =   #000000
+foreground            =   #85d4d1
+cursor-color          =   #ff0017
+selection-background  = #f6d56a
+palette= 0=#341a0d
+palette= 8=#874227
+palette= 1=#95bd5e
+palette= 9=#ff4230
+palette= 2=#f77d02 
+palette= 10=#95bd5e
+palette= 3=#c26e27
+palette= 11=#ff9565
+palette= 4=#d0d4c9
+palette= 12=#9eb2b3
+palette= 5=#9b1d29
+palette= 13=#ff5b6a
+palette= 6=#588056
+palette= 14=#89cc8e
+palette= 7=#000000
+palette= 15=#ffffff
+selection-foreground  = #52363f
+window-titlebar-background = #000000
+
+
+background-blur-radius = 20
+mouse-hide-while-typing = true
+#background-image = "/home/lostfromlight/NMN/Luminarium/grad.jpg"
+background-opacity = 0.2
+window-decoration = false
+
+
+
+##KEYBINDS##
+keybind = ctrl+s=new_split:right
+keybind = ctrl+left=goto_split:left
+keybind = ctrl+right=goto_split:right
+keybind = ctrl+shift+left=resize_split:left,20
+keybind = ctrl+shift+right=resize_split:right,20
+keybind = ctrl+w=close_surface
+keybind = ctrl+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard
+keybind = ctrl+a=select_all
+keybind = ctrl+t=new_tab
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift>tab=previous_tab
+keybind = alt+c=open_config
+keybind = ctrl+d=toggle_window_decorations
+keybind = global:ctrl+shift+w=toggle_quick_terminal
+keybind = ctrl+i=inspector:toggle

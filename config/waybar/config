@@ -7,7 +7,7 @@
       "format": "  ",
       "tooltip": false,
       "on-click": "sh $HOME/.config/rofi/bin/powermenu",
-	  "font": "Hawaii_Killer"
+	  "font": "Barron"
       },
 
 
