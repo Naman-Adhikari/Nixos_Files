@@ -35,6 +35,8 @@ nix.settings.experimental-features = [ "nix-command" "flakes"];
 
   environment.sessionVariables = {
   # WLR_NO_HARDWARE_CURSORS = "1";
+   EDITOR = "nvim";
+   VISUAL = "nvim";
    NIXOS_OZONE_WL = "1";
    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\${HOME}/.steam/root/compatibilitytools.d";
@@ -134,7 +136,6 @@ hardware.bluetooth.enable = true;
     obs-studio
     vlc
     audacity
-    neofetch
     jp2a
     hyprland
     rofi-wayland
@@ -167,6 +168,15 @@ hardware.bluetooth.enable = true;
     python311Packages.pyinstaller
     copyq
     libreoffice-qt6
+    lua-language-server
+    desktop-file-utils
+    mpvpaper
+    mpv
+    starship
+    blueman
+    ghostty
+    fastfetch
+    yazi
 
  ];
 
