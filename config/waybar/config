@@ -7,7 +7,7 @@
       "format": "  ",
       "tooltip": false,
       "on-click": "sh $HOME/.config/rofi/bin/powermenu",
-	  "font": "Barron"
+	  "font": "Hawaii_Killer"
       },
 
 
@@ -20,16 +20,16 @@
       "all-outputs": true,
       "format-icons": {
         "active": "~",
-        "1": "𝟙",
-         "2": "𝟚",
-        "3": "𝟛",
-        "4": "𝟜",
-        "5": "𝟝",
-         "6": "𝟞",
-        "7": "𝟟",
-        "8": "𝟠",
-        "9": "𝟡",
-        "10": "𝟙𝟘",
+        "1": "【1】",
+         "2": "【2】",
+        "3": "【3】",
+        "4": "【4】",
+        "5": "【5】",
+         "6": "【6】",
+        "7": "【7】",
+        "8": "【8】",
+        "9": "【9】",
+        "10": "【10】",
         "format-window-separator": " | "
       }
     },
@@ -57,6 +57,7 @@
       "format-disabled": "", // an empty format will hide the module
       "format-connected": "<span color='#dee0dc'>🚀</span> ",
       "tooltip-format": "{device_enumerate}",
+	  "on-click": "blueman-manager",
       "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
     },
     "network": {

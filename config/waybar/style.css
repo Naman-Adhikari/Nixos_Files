@@ -1,6 +1,6 @@
 * {
   border: none;
-  font-family: 'Barron', 'sans-serif';
+  font-family: 'SLICKER', 'sans-serif';
   font-size: 17px;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 25px;
@@ -11,13 +11,23 @@ window#waybar {
 }
 
 #custom-arch, #workspaces {
-  border-radius: 20px;
-  background-color: #050505;
-  color: #02c2f2;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  border-radius: 5px;
+  /*background-color: transparent;*/
+  background: linear-gradient(
+  to bottom,
+  rgba(24, 71, 23, 1) 0%,
+  rgba(24, 71, 23, 1) 2%,
+  rgba(0, 0, 0, 0.6) 30%,
+  rgba(0, 0, 0, 0.6) 70%,
+  rgba(24, 71, 23, 1) 98%,
+  rgba(24, 71, 23, 1) 100%
+);
+
+/*  color: #36240b;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: 10px;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -25,21 +35,30 @@ window#waybar {
 #custom-arch {
   font-size: 20px;
   margin-left: 15px;
-  color: #042902;
+  color: #acf2bf;
 }
 
 #workspaces button {
-  background: #050505;
-  color: #20eef5;
+  background: transparent;
+  color: #84f0a1;
 }
 
 #clock, #backlight, #pulseaudio, #bluetooth, #network, #battery{
-  border-radius: 30px;
-  background-color: #050505;
-  color: #20eef5;
+  border-radius: 5px;
+  background: linear-gradient(
+  to bottom,
+  rgba(24, 71, 23, 1) 0%,
+  rgba(24, 71, 23, 1) 2%,
+  rgba(0, 0, 0, 1) 30%,
+  rgba(0, 0, 0, 1) 70%,
+  rgba(24, 71, 23, 1) 98%,
+  rgba(24, 71, 23, 1) 100%
+);
+
+  color: #84f0a1;
   padding-top: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 15px;
