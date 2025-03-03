@@ -33,6 +33,10 @@ Kitty (v.3)
 Ghostty (v.1)
 ![image](https://github.com/user-attachments/assets/1df7bfe9-6a8e-4e52-8ee8-654fe576cdb4)
 
+Nvim (v.2), Waybar (v.2)
+![image](https://github.com/user-attachments/assets/d494f2dd-35fe-4384-80b7-98b782512f18)
+
+
 
 
 
