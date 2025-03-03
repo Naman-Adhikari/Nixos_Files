@@ -13,9 +13,7 @@ if not vim.loop.fs_stat(lazypath) then  -- for lazy package manager
 end
 vim.opt.rtp:prepend(lazypath)
 
-
 local opts = {}
-
 
 
 require("lazy").setup("plugins")
