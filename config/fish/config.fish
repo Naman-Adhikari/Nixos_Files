@@ -36,6 +36,7 @@ end
 #Abbreviations
 abbr -a n "nvim"
 abbr -a reb "sudo nixos-rebuild test"
+abbr -a rebs "sudo nixos-rebuild switch"
 abbr -a ga "git add ."
 abbr -a gs "git status"
 abbr -a gp "git push"
