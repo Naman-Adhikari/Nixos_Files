@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pylsp" }
+        ensure_installed = { "lua_ls", "pylsp", "vtsls", "html", "cssls" }
       })
     end,
   },
@@ -30,6 +30,12 @@ return {
 				on_attach = on_attach,
 				capabilities = capabilities
 			})
+
+		lspconfig.vtsls.setup({})	   
+		lspconfig.html.setup({})	   
+		lspconfig.cssls.setup({})	   
+
+		 
 
       -- Setup for Python LSP with trailing whitespace warnings disabled
       lspconfig.pylsp.setup({

@@ -8,7 +8,7 @@ return {
     },
     config = function()
         require("neo-tree").setup({}) -- Ensure Neo-tree is properly set up
-        vim.keymap.set('n', "<C-t>", ":Neotree filesystem reveal left<CR>", { noremap = true, silent = true })
+        vim.keymap.set('n', "<S-t>", ":Neotree filesystem reveal left<CR>", { noremap = true, silent = true })
     end
 }
 
