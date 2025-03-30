@@ -32,8 +32,9 @@ mouse-hide-while-typing = true
 background-opacity = 0.2
 window-decoration = false
 
-
-
+confirm-close-surface = false
+custom-shader = /home/lostfromlight/.config/ghostty/shaders/grid.glsl
+custom-shader-animation = always
 ##KEYBINDS##
 keybind = ctrl+s=new_split:right
 keybind = ctrl+left=goto_split:left
