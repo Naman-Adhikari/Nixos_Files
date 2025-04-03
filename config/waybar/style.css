@@ -1,82 +1,84 @@
 * {
   border: none;
-  font-family: 'SLICKER', 'sans-serif';
+  font-family: 'SLICKER', sans-serif;
   font-size: 16px;
-  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   min-height: 10px;
 }
 
 window#waybar {
   background: transparent;
+  padding: 10px 0;
+  margin: 20px 0;
 }
 
-#custom-arch, #workspaces {
+/* Gradient: Darker Off-White Edges → Soft Cyan Center */
+.modules-right > *,
+.modules-center > *,
+.modules-left > * {
   border-radius: 100px;
-  /*background-color: transparent;*/
   background: linear-gradient(
-  to bottom,
-  rgba(128, 21, 13, 1) 0%,
-  rgba(128, 21, 13, 1) 1%,
-  rgba(0, 0, 0, 0.6) 30%,
-  rgba(0, 0, 0, 0.6) 70%,
-  rgba(128, 21, 13, 1) 99%,
-  rgba(128, 21, 13, 1) 100%
-);
-
-/*  color: #36240b;*/
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  padding-top: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
+    145deg,
+    #d8edf0 0%,     /* Slightly darker edge (was #e0f5fa) */
+    #d0e8eb 15%,    /* Transition shade */
+    #bfeff2 40%,    /* Your soft cyan center */
+    #a8e2e6 60%,    /* Slightly deeper cyan */
+    #d0e8eb 85%,    /* Transition back */
+    #d8edf0 100%    /* Darker edge */
+  );
+  box-shadow: 
+    0 2px 3px rgba(0, 0, 0, 0.1),
+    inset 0 0 2px rgba(191, 239, 242, 0.3);
+  color: #0a1215;
+  margin: 10px 0;
+  padding: 8px 16px;
 }
 
-#custom-arch {
-  font-size: 20px;
-  margin-left: 15px;
-  color: #edd3d1;
+/* Rest of your existing CSS remains the same */
+.modules-right > * {
+  margin: 5px 25px 0px 5px;
+}
+
+#workspaces {
+  padding: 0 12px;
+  margin-right: 15px;
 }
 
 #workspaces button {
   background: transparent;
-  color: #edd3d1;
+  color: #0a1215;
+  transition: all 0.3s ease;
 }
 
-#clock, #backlight, #pulseaudio, #bluetooth, #network, #battery{
-  border-radius: 100px;
-  background: linear-gradient(
-  to bottom,
-  rgba(128, 21, 13, 1) 0%,
-  rgba(128, 21, 13, 1) 1%,
-  rgba(0, 0, 0, 1) 30%,
-  rgba(0, 0, 0, 1) 70%,
-  rgba(128, 21, 13, 1) 99%,
-  rgba(128, 21, 13, 1) 100%
-);
-
-  color: #edd3d1;
-  padding-top: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 15px;
+#workspaces button.active {
+  color: #006680;
+  text-shadow: 0 0 5px rgba(191, 239, 242, 0.5);
 }
 
 #backlight, #bluetooth {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  padding-right: 5px;
-  margin-right: 0
+  padding-right: 10px;
+  margin-right: 0;
 }
 
 #pulseaudio, #network {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding-left: 5px;
+  padding-left: 10px;
+  margin-left: 0;
 }
 
 #clock {
   margin-right: 0;
+}
+
+#battery.charging {
+  animation: pulse 2s infinite;
+  padding-left: 25px;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
 }
