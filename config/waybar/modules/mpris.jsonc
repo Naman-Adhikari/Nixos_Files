@@ -1,0 +1,18 @@
+{
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+
+    "player-icons": {
+      "default": "󰝚 ",
+      "spotify": "<span foreground='#40a02b'>󰓇 </span>",
+      "firefox": "<span foreground='#d20f39'>󰗃 </span>"
+    },
+
+    "status-icons": {
+      "paused": "󰏤 "
+    },
+
+    "interval": 1
+  }
+}
