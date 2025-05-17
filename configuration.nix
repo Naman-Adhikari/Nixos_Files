@@ -24,6 +24,15 @@
    xwayland.enable = true;
  };
 
+
+
+ #Enabling NIRI
+ services.displayManager.sessionPackages = [ pkgs.niri ];
+ programs.xwayland.enable = true;
+
+
+
+
 services.xserver.videoDrivers = ["nvidia"];
 nix.settings.experimental-features = [ "nix-command" "flakes"];
 
@@ -99,8 +108,6 @@ hardware.bluetooth.enable = true;
 
 
 
-
-
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -147,6 +154,7 @@ hardware.bluetooth.enable = true;
     imv
     github-desktop
     git
+    fish
     pywal    
     obsidian
     inotify-tools
@@ -173,10 +181,20 @@ hardware.bluetooth.enable = true;
     mpvpaper
     mpv
     starship
-    blueman
+    bluetui
     ghostty
     fastfetch
     yazi
+    gparted
+    niri
+    nemo
+    unetbootin
+    swaybg
+    xwayland-satellite
+    eww
+    waypaper
+    ollama
+
 
  ];
 
