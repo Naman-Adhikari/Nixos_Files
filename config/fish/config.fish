@@ -41,6 +41,8 @@ abbr -a ga "git add ."
 abbr -a gs "git status"
 abbr -a gp "git push"
 abbr -a conf "sudo nvim /etc/nixos/configuration.nix"
+abbr -a ai "sudo systemctl start ollama.service"
+abbr -a ais "sudo systemctl stop ollama.service"
 
 
 

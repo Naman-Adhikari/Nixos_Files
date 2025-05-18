@@ -1,5 +1,5 @@
 
-{ confit, pkgs, ... }:
+{lib, confit, pkgs, ... }:
 
 {
   imports =
@@ -36,9 +36,16 @@
 services.xserver.videoDrivers = ["nvidia"];
 nix.settings.experimental-features = [ "nix-command" "flakes"];
 
-#programs.steam.enable = true;
-#programs.steam.gamescopeSession.enable = true;
- # programs.gamemode.enable = true;
+services.ollama.enable = true;
+services.ollama.acceleration = "cuda";
+nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+"nvidia-x11"
+#for ollama
+"cuda_cudart"
+"libcublas"
+"cuda_cccl"
+"cuda_nvcc"
+];
 
 
 
@@ -54,12 +61,11 @@ nix.settings.experimental-features = [ "nix-command" "flakes"];
   hardware = {
     graphics.enable = true;
     nvidia.modesetting.enable = true;
-    nvidia.open = true;
+    nvidia.open = false;
+    nvidia.nvidiaSettings = true;
 };
 
 services.flatpak.enable = true;
-
-
 
 
 services.tlp.enable = true;
