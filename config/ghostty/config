@@ -1,6 +1,6 @@
 #Run `ghostty +show-config --default --docs` to view a list of
-font-family = nerd
-font-size = 12
+font-family = fantasque sans mono
+font-size = 14
 
 background            =   #000000
 foreground            =   #85d4d1

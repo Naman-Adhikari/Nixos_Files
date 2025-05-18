@@ -3,10 +3,8 @@ set -x PATH $PATH ~/bin
 set -g fish_greeting ""
 
 
-# To add support for TTYs, this line can be optionally added.
-if test -f ~/.cache/wal/colors-tty.sh
-    source ~/.cache/wal/colors-tty.sh
-end
+#atuin
+atuin init fish | source
 
 # Only run the following in interactive sessions
 if status is-interactive
@@ -43,7 +41,8 @@ abbr -a gp "git push"
 abbr -a conf "sudo nvim /etc/nixos/configuration.nix"
 abbr -a ai "sudo systemctl start ollama.service"
 abbr -a ais "sudo systemctl stop ollama.service"
-abbr -a gemma "ollama run gemma2:2b"
+abbr -a qwen "ollama run qwen2.5-coder:1.5b"
+abbr -a gm "git commit -m"
 
 
 
