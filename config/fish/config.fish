@@ -43,6 +43,7 @@ abbr -a gp "git push"
 abbr -a conf "sudo nvim /etc/nixos/configuration.nix"
 abbr -a ai "sudo systemctl start ollama.service"
 abbr -a ais "sudo systemctl stop ollama.service"
+abbr -a gemma "ollama run gemma2:2b"
 
 
 
