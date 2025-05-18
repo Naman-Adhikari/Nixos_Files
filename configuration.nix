@@ -200,6 +200,9 @@ hardware.bluetooth.enable = true;
     eww
     waypaper
     ollama
+    atuin
+    btop
+    toipe
 
 
  ];
