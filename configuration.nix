@@ -203,6 +203,7 @@ hardware.bluetooth.enable = true;
     atuin
     btop
     toipe
+    floorp
 
 
  ];
