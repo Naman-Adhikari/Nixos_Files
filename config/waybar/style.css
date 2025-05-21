@@ -37,45 +37,72 @@ window#waybar.hidden {
     padding-right: 10px;
     border-radius: 5px 20px 5px 20px;
     border: solid 3px;
-    border-color: #000000;
-    transition: border-radius 0.3s ease;
+    border-color: #484a4a;
+    transition: background 0.3s ease,
+	border-radius 0.3s ease;
     color: #ffffff;
-    background: #465759;
+    background: #0f1c17;
 }
 
 #custom-updates:hover {
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 5px 20px 5px;
+	background: #484a4a;
 }
 
+#custom-spotify {
+	margin-left: 8px;
+	padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px 20px 5px 20px;
+    border: solid 3px;
+    border-color: #484a4a;
+    transition: background 0.3s ease-in-out,
+	border-radius 0.3s ease-in-out;
+    color: #ffffff;
+    background: #0f1c17;
+}	
+
+#custom-spotify:hover {
+	border-radius: 20px 5px 20px 5px;
+	background: #484a4a;
+}
 
 #clock {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 5px 5px 20px 20px;
     border: solid 3px;
-    border-color: #000000;
-    transition: border-radius 0.3s ease;
+    border-color: #484a4a;
+    transition: background 0.3s ease,
+	border-radius 0.3s ease;
     color: #ffffff;
-    background: #465759;
+    background: #0f1c17;
 }
 
 #clock:hover {
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 5px 5px;
+	background: #484a4a;
 }
+
+#custom-cava {
+	margin-right: 8px;
+}	
 
 
 #pulseaudio {
     margin-right: 8px;
     border-radius: 20px 5px 20px 5px;
     border: solid 3px;
-    border-color: #000000;
-    transition: border-radius 0.3s ease;
+    border-color: #484a4a;
+    transition: background 0.3s ease,
+	border-radius 0.3s ease;
     color: #ffffff;
-    background: #465759;
+    background: #0f1c17;
 }
 
 #pulseaudio:hover {
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 5px 20px 5px 20px;
+	background: #484a4a;
 }
 
 #backlight {
@@ -84,14 +111,16 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 20px 5px 20px 5px;
     border: solid 3px;
-    border-color: #000000;
-    transition: border-radius 0.3s ease;
+    border-color: #484a4a;
+    transition: background 0.3s ease,
+	border-radius 0.3s ease;
     color: #ffffff;
-    background: #465759;
+    background: #0f1c17;
 }
 
 #backlight:hover {
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 5px 20px 5px 20px;
+	background: #484a4a;
 }
 
 
@@ -100,31 +129,36 @@ window#waybar.hidden {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 20px 5px 20px 5px;
-    border: solid 1px;
-    border-color: #474036;
-    transition: none;
+    border: solid 3px;
+    border-color: #484a4a;
+    transition: background 0.3s ease,
+	border-radius 0.3s ease;
     color: #ffffff;
-    background: #181818;
+    background: #0f1c17;
 }
 
+#battery:hover {
+	border-radius: 5px 20px 5px 20px;
+	background: #484a4a;
+}
 
 
 #battery.charging {
     color: #ffffff;
     /*background-color: #26A65B;*/
-    background-color: #181818;
-    border: solid 1px;
-    border-color: #487caf;
+    background-color: #0f1c17;
+    border: solid 3px;
+    border-color: #484a4a;
 }
 
 #battery.warning:not(.charging) {
-    background-color: #181818;
-    color: #ffffff;
-    border-color: #ffbe61;
+    background-color: #0f1c17;
+    color: #ff0000;
+    border-color: #ff0000;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #181818;
+    background-color: #0f1c17;
     color: #ffffff;
     border-color: #ad2626;
     animation-name: blink;
@@ -142,16 +176,23 @@ window#waybar.hidden {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 20px 10px 10px 5px;
-    border: solid 1px;
-    border-color: #474036;
-    transition: none;
+    border: solid 3px;
+    border-color: #484a4a;
+    transition: background 0.3s ease,
+	border-radius 0.3s ease;
     color: #ffffff;
-    background: #181818;
+    background: #0f1c17;
 }
+
+#tray:hover {
+	border-radius: 5px 20px 5px 20px;
+	background: #484a4a;
+}
+
 
 @keyframes blink {
     to {
         background-color: #ffffff;
-        color: #000000;
+        color: #484a4a;
     }
 }
