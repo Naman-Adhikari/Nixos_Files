@@ -204,6 +204,9 @@ hardware.bluetooth.enable = true;
     btop
     toipe
     floorp
+    curl
+    playerctl
+    cava
 
 
  ];
