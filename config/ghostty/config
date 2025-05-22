@@ -1,4 +1,3 @@
-#Run `ghostty +show-config --default --docs` to view a list of
 font-family = fantasque sans mono
 font-size = 14
 
@@ -52,4 +51,5 @@ keybind = alt+c=open_config
 keybind = ctrl+d=toggle_window_decorations
 keybind = global:ctrl+shift+w=toggle_quick_terminal
 keybind = ctrl+i=inspector:toggle
-
+keybind = ctrl+shift+plus=increase_font_size:1
+keybind = ctrl+shift+minus=decrease_font_size:1
