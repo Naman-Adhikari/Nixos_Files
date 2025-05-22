@@ -31,6 +31,11 @@
  programs.xwayland.enable = true;
 
 
+#Disable nvidia gpu to enter integrated mode (uncomment to enable nvidia)
+boot.blacklistedKernelModules = [ "nvidia" "nvidia_drm" "nvidia_modeset" "nvidia_uvm" ];
+
+
+
 
 
 services.xserver.videoDrivers = ["nvidia"];
@@ -39,7 +44,6 @@ nix.settings.experimental-features = [ "nix-command" "flakes"];
 services.ollama.enable = true;
 services.ollama.acceleration = "cuda";
 nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-"nvidia-x11"
 #for ollama
 "cuda_cudart"
 "libcublas"
@@ -124,7 +128,8 @@ hardware.bluetooth.enable = true;
 
 
   };
-
+systemd.user.services.xdg-desktop-portal.enable = true;
+systemd.user.services.xdg-desktop-portal-wlr.enable = true;
 
   users.users.lostfromlight = {
     isNormalUser = true;
@@ -207,6 +212,10 @@ hardware.bluetooth.enable = true;
     curl
     playerctl
     cava
+    powertop
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
+    ffmpeg
 
 
  ];
