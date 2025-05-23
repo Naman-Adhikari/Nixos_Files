@@ -117,6 +117,7 @@ hardware.bluetooth.enable = true;
   services.power-profiles-daemon.enable = false;
 
 
+  services.pipewire.wireplumber.enable = true;
 
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -151,7 +152,6 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     waybar
     kitty
     gimp
-    obs-studio
     vlc
     audacity
     jp2a
@@ -215,7 +215,8 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     powertop
     xdg-desktop-portal
     xdg-desktop-portal-wlr
-    ffmpeg
+    kooha
+    wf-recorder
 
 
  ];
