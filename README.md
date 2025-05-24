@@ -36,6 +36,10 @@ Ghostty (v.1)
 Nvim (v.2), Waybar (v.2)
 ![image](https://github.com/user-attachments/assets/d494f2dd-35fe-4384-80b7-98b782512f18)
 
+Latest setup
+![Screenshot from 2025-05-23 22-40-09](https://github.com/user-attachments/assets/8f8ff968-ee84-4021-823e-2881e2d93b19)
+
+
 
 
 
