@@ -10,7 +10,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "proxy-pc"; # Define your hostname.
 
 
   networking.networkmanager.enable = true;
@@ -32,9 +32,25 @@
 
 
 #Disable nvidia gpu to enter integrated mode (uncomment to enable nvidia)
-boot.blacklistedKernelModules = [ "nvidia" "nvidia_drm" "nvidia_modeset" "nvidia_uvm" ];
+#boot.blacklistedKernelModules = [ "nvidia" "nvidia_drm" "nvidia_modeset" "nvidia_uvm" ];
 
+#powertop config
+#systemd.services.powertop = {
+#  description = "Apply Powertop Tunings on Boot";
+ # wantedBy = [ "multi-user.target" ];
+#  after = [ "multi-user.target" ];
+#  serviceConfig = {
+#    Type = "oneshot";
+#    ExecStart = "${pkgs.powertop}/bin/powertop --auto-tune";
+#  };
+  # Optional: run only on battery
+#  unitConfig.ConditionACPower = false;
+#};
 
+programs.fish.enable = true;
+users.users.lostfromlight = {
+  shell = pkgs.fish;
+};
 
 
 
@@ -42,14 +58,14 @@ services.xserver.videoDrivers = ["nvidia"];
 nix.settings.experimental-features = [ "nix-command" "flakes"];
 
 services.ollama.enable = true;
-services.ollama.acceleration = "cuda";
-nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+#services.ollama.acceleration = "cuda";
+#nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
 #for ollama
-"cuda_cudart"
-"libcublas"
-"cuda_cccl"
-"cuda_nvcc"
-];
+#"cuda_cudart"
+#"libcublas"
+#"cuda_cccl"
+#"cuda_nvcc"
+#];
 
 
 
@@ -178,6 +194,7 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     luajit
     blender
     hyprlock
+    ghostty
     hypridle
     gcc
     protonup
@@ -189,26 +206,19 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     libreoffice-qt6
     lua-language-server
     desktop-file-utils
-    mpvpaper
     mpv
     starship
-    bluetui
-    ghostty
     fastfetch
     yazi
     gparted
     niri
-    nemo
     unetbootin
-    swaybg
     xwayland-satellite
-    eww
     waypaper
     ollama
     atuin
     btop
     toipe
-    floorp
     curl
     playerctl
     cava
@@ -217,6 +227,7 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     xdg-desktop-portal-wlr
     kooha
     wf-recorder
+    librewolf
 
 
  ];
