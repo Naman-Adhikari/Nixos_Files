@@ -29,6 +29,7 @@ vim.cmd([[
   highlight Folded guifg=#87cde0 guibg=#454747 gui=italic
 ]])
 
+
 -- Optional: Better fold characters (requires NerdFont)
 vim.opt.fillchars = {
   fold = " ",
@@ -36,3 +37,25 @@ vim.opt.fillchars = {
   foldclose = "", -- Right arrow icon
 }
 
+-- F5 keybinding to compile/run depending on filetype
+vim.api.nvim_set_keymap('n', '<F5>', '', { noremap = true, silent = true, callback = function()
+  local filetype = vim.bo.filetype
+  local filename = vim.fn.expand('%')
+  local fname_no_ext = vim.fn.expand('%:r')
+
+  if filetype == "c" then
+    -- Compile and run C file
+    vim.cmd('w') -- Save current file
+    vim.cmd('split | terminal gcc ' .. filename .. ' -o ' .. fname_no_ext .. ' && ./' .. fname_no_ext)
+  elseif filetype == "cpp" then
+    -- Compile and run C++ file
+    vim.cmd('w') -- Save current file
+    vim.cmd('split | terminal g++ ' .. filename .. ' -o ' .. fname_no_ext .. ' && ./' .. fname_no_ext)
+  elseif filetype == "python" then
+    -- Run Python script
+    vim.cmd('w') -- Save current file
+    vim.cmd('split | terminal python3 ' .. filename)
+  else
+    print("F5: No run command set for filetype: " .. filetype)
+  end
+end})
