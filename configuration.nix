@@ -68,11 +68,12 @@ services.ollama.enable = true;
 #];
 
 
-
   environment.sessionVariables = {
   # WLR_NO_HARDWARE_CURSORS = "1";
    EDITOR = "nvim";
    VISUAL = "nvim";
+   BROWSER = "librewolf";
+   DEFAULT_BROWSER = "librewolf";
    NIXOS_OZONE_WL = "1";
    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\${HOME}/.steam/root/compatibilitytools.d";
@@ -228,6 +229,8 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     kooha
     wf-recorder
     librewolf
+    zoxide
+    direnv
 
 
  ];
