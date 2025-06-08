@@ -1,15 +1,16 @@
 # Set PATH
 set -x PATH $PATH ~/bin
-set -g fish_greeting ""
 
+#direnv
+echo 'eval (direnv hook fish)' >> ~/.config/fish/config.fish
 
 #atuin
 atuin init fish | source
 
+#zoxide
+zoxide init fish | source
 # Only run the following in interactive sessions
 if status is-interactive
-    # Run fastfetch and clear screen
-    fastfetch
     clear
     fastfetch
 
@@ -43,6 +44,10 @@ abbr -a ai "sudo systemctl start ollama.service"
 abbr -a ais "sudo systemctl stop ollama.service"
 abbr -a qwen "ollama run qwen2.5-coder:1.5b"
 abbr -a gm "git commit -m"
+abbr -a shell "nix-shell"
+abbr -a py "python3"
 
 
 
+eval (direnv hook fish)
+eval (direnv hook fish)
