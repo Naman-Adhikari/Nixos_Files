@@ -24,6 +24,7 @@
    xwayland.enable = true;
  };
 
+#for autologin
 
 
  #Enabling NIRI
@@ -59,13 +60,15 @@ nix.settings.experimental-features = [ "nix-command" "flakes"];
 
 services.ollama.enable = true;
 #services.ollama.acceleration = "cuda";
-#nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-#for ollama
-#"cuda_cudart"
-#"libcublas"
-#"cuda_cccl"
-#"cuda_nvcc"
-#];
+nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+  "cuda_cudart"
+  "libcublas"
+  "cuda_cccl"
+  "cuda_nvcc"
+  "nvidia-x11"
+  "nvidia-settings"
+  "libnvoptix"
+];
 
 
   environment.sessionVariables = {
@@ -119,6 +122,9 @@ services.tlp.settings = {
   services.xserver.enable = true;
 
   services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.autoLogin.enable = true;
+  services.displayManager.sddm.autoLogin.user = "lostfromlight";
+  services.displayManager.defaultSession = "hyprland";
   services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
@@ -193,7 +199,6 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     tlp
     flatpak
     luajit
-    blender
     hyprlock
     ghostty
     hypridle
@@ -228,7 +233,7 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     xdg-desktop-portal-wlr
     kooha
     wf-recorder
-    librewolf
+    floorp
     zoxide
     direnv
 
