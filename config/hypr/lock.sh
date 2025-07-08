@@ -13,7 +13,7 @@ mpv --loop \
 
 MPV_PID=$!
 
-sleep 0.2
+sleep 0.5
 
 hyprlock
 

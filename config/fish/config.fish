@@ -1,8 +1,6 @@
 # Set PATH
 set -x PATH $PATH ~/bin
 
-#direnv
-echo 'eval (direnv hook fish)' >> ~/.config/fish/config.fish
 
 #atuin
 atuin init fish | source
@@ -46,8 +44,9 @@ abbr -a qwen "ollama run qwen2.5-coder:1.5b"
 abbr -a gm "git commit -m"
 abbr -a shell "nix-shell"
 abbr -a py "python3"
+abbr -a bluetooth "python3 ~/Programming/python/pyscripts/bluetooth.py" 
 
 
 
-eval (direnv hook fish)
+#direnv
 eval (direnv hook fish)

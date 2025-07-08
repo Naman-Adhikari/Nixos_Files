@@ -3,9 +3,13 @@
   "logo": {
     "type": "kitty-direct",
     "source": "~/.config/fastfetch/eldritch.png",
+	"width": 31,
+    "height": 16,
     "padding": {
-      "right": 10,
-      "top": 6
+      "right": 5,
+      "left": 5,
+      "bottom": 2,
+      "top": 4
     }
   },
   "general": {
@@ -23,7 +27,7 @@
     "break",
     {
       "type": "custom",
-      "format": "┌──────────────────────────────────────────────────────────────────────────────┐" // `\u001b` is `\033`, or `\e`
+      "format": "┌──────────────────────────────────────────────────────────────────────────────┐"
     },
     "break",
     {
@@ -38,7 +42,7 @@
     },
     {
       "key": "     Kernel       ",
-      "keyColor": "blue",
+      "keyColor": "white",
       "type": "kernel"
     },
     {
@@ -53,7 +57,7 @@
     },
     {
       "key": "     WM           ",
-      "keyColor": "blue",
+      "keyColor": "white",
       "type": "wm"
     },
     {
@@ -68,7 +72,7 @@
     },
     {
       "key": "     Font         ",
-      "keyColor": "blue",
+      "keyColor": "white",
       "type": "terminalfont"
     },
     {
@@ -83,7 +87,7 @@
     },
     {
       "key": "    󰑭 Memory       ",
-      "keyColor": "blue",
+      "keyColor": "white",
       "type": "memory"
     },
     {
@@ -96,11 +100,11 @@
       "keyColor": "cyan",
       "type": "localip",
       "compact": true
-    },	
-	"break",
+    },
+    "break",
     {
       "type": "custom",
-      "format": "└──────────────────────────────────────────────────────────────────────────────┘" // `\u001b` is `\033`, or `\e`
+      "format": "└──────────────────────────────────────────────────────────────────────────────┘"
     },
     "break",
     {
@@ -113,3 +117,4 @@
     }
   ]
 }
+

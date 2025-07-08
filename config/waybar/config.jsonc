@@ -29,10 +29,10 @@
             "format": "{:%a | %d %b | %I:%M %p}"
         },
 
-		"custom/cava": {
+/*		"custom/cava": {
 				"format": "{}",
 				"exec": "~/.config/waybar/scripts/cava.sh"
-			},
+			}, */
 
 			  "network": {
 		  "format-wifi": "󰤨  {essid} ({signalStrength}%)",

@@ -20,15 +20,37 @@ window#waybar.hidden {
     border-radius: 5px 20px 5px 20px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
+
+
 }
 
 #custom-updates:hover {
 	border-radius: 20px 5px 20px 5px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,       /* Black at top edge */
+    #222222 1%,       /* Dark gray */
+    #777777 4%,       /* Mid gray */
+    #ffffff 50%,      /* Pure white at center */
+    #777777 96%,      /* Mid gray */
+    #222222 99%,      /* Dark gray */
+    #000000 100%      /* Black at bottom edge */
+);
+
 }
 
 #custom-spotify {
@@ -38,15 +60,36 @@ window#waybar.hidden {
     border-radius: 5px 20px 5px 20px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease-in-out,
+    transition: background 0.3s ease-in-out,color 0.3s ease,
 	border-radius 0.3s ease-in-out;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
+
 }	
 
 #custom-spotify:hover {
 	border-radius: 20px 5px 20px 5px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,       
+    #222222 1%,      
+    #777777 4%,     
+    #ffffff 50%,   
+    #777777 96%,  
+    #222222 99%, 
+    #000000 100%
+);
+
 }
 
 
@@ -56,15 +99,37 @@ window#waybar.hidden {
     border-radius: 5px 5px 20px 20px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
+
+
 }
 
 #clock:hover {
 	border-radius: 20px 20px 5px 5px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,    
+    #222222 1%,   
+    #777777 4%,  
+    #ffffff 50%,
+    #777777 96%,
+    #222222 99%,
+    #000000 100%   
+);
+
 }
 
 #custom-cava {
@@ -78,16 +143,37 @@ window#waybar.hidden {
 	border-radius: 20px 5px 20px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
+
 }
 
 
 #network:hover {
 	border-radius: 5px 20px 5px 20px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,    
+    #222222 1%,   
+    #777777 4%,  
+    #ffffff 50%,
+    #777777 96%,
+    #222222 99%,
+    #000000 100%   
+);
+
 }
 
 #pulseaudio {
@@ -97,15 +183,36 @@ window#waybar.hidden {
     padding-right: 0px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
+
 }
 
 #pulseaudio:hover {
 	border-radius: 5px 20px 5px 20px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,    
+    #222222 1%,   
+    #777777 4%,  
+    #ffffff 50%,
+    #777777 96%,
+    #222222 99%,
+    #000000 100%   
+);
+
 }
 
 #backlight {
@@ -115,15 +222,36 @@ window#waybar.hidden {
     border-radius: 20px 5px 20px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
+
 }
 
 #backlight:hover {
 	border-radius: 5px 20px 5px 20px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,    
+    #222222 1%,   
+    #777777 4%,  
+    #ffffff 50%,
+    #777777 96%,
+    #222222 99%,
+    #000000 100%   
+);
+
 }
 
 
@@ -134,15 +262,35 @@ window#waybar.hidden {
     border-radius: 20px 5px 20px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
 }
 
 #battery:hover {
 	border-radius: 5px 20px 5px 20px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,    
+    #222222 1%,   
+    #777777 4%,  
+    #ffffff 50%,
+    #777777 96%,
+    #222222 99%,
+    #000000 100%   
+);
+
 }
 
 
@@ -184,15 +332,35 @@ window#waybar.hidden {
     border-radius: 20px 10px 10px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease,
+    transition: background 0.3s ease, color 0.3s ease,
 	border-radius 0.3s ease;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
 }
 
 #tray:hover {
 	border-radius: 5px 20px 5px 20px;
-	background: #484a4a;
+	color: #000000;
+	background: linear-gradient(
+    to bottom,
+    #000000 0%,    
+    #222222 1%,   
+    #777777 4%,  
+    #ffffff 50%,
+    #777777 96%,
+    #222222 99%,
+    #000000 100%   
+);
+
 }
 
 #custom-recorder {
@@ -202,7 +370,16 @@ window#waybar.hidden {
 	border: solid 3px;
 	border-color: #484a4a;
     color: #ffffff;
-    background: #0f1c17;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #cccccc 2%,
+    #888888 8%,
+    #000000 50%,
+    #888888 92%,
+    #cccccc 98%,
+    #ffffff 100%
+);
 }
 
 #custom-recorder.recording {
