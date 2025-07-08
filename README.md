@@ -40,6 +40,12 @@ Latest setup
 ![Screenshot from 2025-05-23 22-40-09](https://github.com/user-attachments/assets/8f8ff968-ee84-4021-823e-2881e2d93b19)
 
 
+Latest Setup 2.0
+
+![image](https://github.com/user-attachments/assets/30471019-699b-4f20-9ab1-23f740eb8601)
+
+
+
 
 
 
