@@ -1,6 +1,6 @@
 {
     "margin": "5 20 0 20",
-        "modules-left": ["custom/updates", "custom/spotify", "custom/cava"],
+        "modules-left": ["custom/updates", "hyprland/workspaces", "custom/spotify", "custom/cava"],
         "modules-center": ["clock"],
         "modules-right": ["network","pulseaudio", "backlight", "battery", "custom/ytube", "tray", "custom/recorder"],
 
@@ -16,6 +16,28 @@
             "on-click": "dolphin", 
             "signal": 8
         },
+
+		 "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "•",
+            "2": "•",
+            "3": "•",
+            "4": "•",
+            "5": "•",
+            "6": "•",
+            "7": "•",
+            "8": "•",
+            "9": "•",
+            "10": "•",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true
+    },
 
 		"custom/spotify": {
 		  "format": "  {}",

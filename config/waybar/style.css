@@ -20,78 +20,122 @@ window#waybar.hidden {
     border-radius: 5px 20px 5px 20px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
-
-
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #custom-updates:hover {
-	border-radius: 20px 5px 20px 5px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,       /* Black at top edge */
-    #222222 1%,       /* Dark gray */
-    #777777 4%,       /* Mid gray */
-    #ffffff 50%,      /* Pure white at center */
-    #777777 96%,      /* Mid gray */
-    #222222 99%,      /* Dark gray */
-    #000000 100%      /* Black at bottom edge */
-);
-
+    border-radius: 20px 5px 20px 5px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
 
-#custom-spotify {
-	margin-left: 8px;
-	padding-left: 10px;
+#workspaces {
+    margin-left: 8px;
+    padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px 20px 5px 20px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease-in-out,color 0.3s ease,
-	border-radius 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
-
-}	
-
-#custom-spotify:hover {
-	border-radius: 20px 5px 20px 5px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,       
-    #222222 1%,      
-    #777777 4%,     
-    #ffffff 50%,   
-    #777777 96%,  
-    #222222 99%, 
-    #000000 100%
-);
-
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
+#workspaces button {
+    padding: 0 5px;
+    color: inherit;
+    background: transparent;
+    border: none;
+}
+
+#workspaces button.active {
+    color: #ffffff; /* Active workspace highlight color */
+    text-shadow: 0 0 5px #ffffff;
+}
+
+#workspaces button:hover {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#workspaces:hover {
+    border-radius: 20px 5px 20px 5px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
+}
+#custom-spotify {
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px 20px 5px 20px;
+    border: solid 3px;
+    border-color: #484a4a;
+    transition: background 0.3s ease-in-out, color 0.3s ease, border-radius 0.3s ease-in-out;
+    color: #ffffff;
+    background: linear-gradient(
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
+}
+
+#custom-spotify:hover {
+    border-radius: 20px 5px 20px 5px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
+}
 
 #clock {
     padding-left: 16px;
@@ -99,81 +143,73 @@ window#waybar.hidden {
     border-radius: 5px 5px 20px 20px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
     color: #ffffff;
-background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
-
-
+    background: linear-gradient(
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #clock:hover {
-	border-radius: 20px 20px 5px 5px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,    
-    #222222 1%,   
-    #777777 4%,  
-    #ffffff 50%,
-    #777777 96%,
-    #222222 99%,
-    #000000 100%   
-);
-
+    border-radius: 20px 20px 5px 5px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
 
 #custom-cava {
-	margin-left: 8px;
-}	
-
-#network {
-	margin-right: 8px;
-	padding-right: 15px;
-	padding-left: 15px;
-	border-radius: 20px 5px 20px 5px;
-    border: solid 3px;
-    border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
-    color: #ffffff;
-    background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
-
+    margin-left: 8px;
 }
 
+#network {
+    margin-right: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px 5px 20px 5px;
+    border: solid 3px;
+    border-color: #484a4a;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+    color: #ffffff;
+    background: linear-gradient(
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
+}
 
 #network:hover {
-	border-radius: 5px 20px 5px 20px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,    
-    #222222 1%,   
-    #777777 4%,  
-    #ffffff 50%,
-    #777777 96%,
-    #222222 99%,
-    #000000 100%   
-);
-
+    border-radius: 5px 20px 5px 20px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
 
 #pulseaudio {
@@ -183,36 +219,33 @@ background: linear-gradient(
     padding-right: 0px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
-
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #pulseaudio:hover {
-	border-radius: 5px 20px 5px 20px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,    
-    #222222 1%,   
-    #777777 4%,  
-    #ffffff 50%,
-    #777777 96%,
-    #222222 99%,
-    #000000 100%   
-);
-
+    border-radius: 5px 20px 5px 20px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
 
 #backlight {
@@ -222,38 +255,34 @@ background: linear-gradient(
     border-radius: 20px 5px 20px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
-
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #backlight:hover {
-	border-radius: 5px 20px 5px 20px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,    
-    #222222 1%,   
-    #777777 4%,  
-    #ffffff 50%,
-    #777777 96%,
-    #222222 99%,
-    #000000 100%   
-);
-
+    border-radius: 5px 20px 5px 20px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
-
 
 #battery {
     margin-right: 8px;
@@ -262,43 +291,39 @@ background: linear-gradient(
     border-radius: 20px 5px 20px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #battery:hover {
-	border-radius: 5px 20px 5px 20px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,    
-    #222222 1%,   
-    #777777 4%,  
-    #ffffff 50%,
-    #777777 96%,
-    #222222 99%,
-    #000000 100%   
-);
-
+    border-radius: 5px 20px 5px 20px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
-
 
 #battery.charging {
     color: #ffffff;
-	padding-right: 9px;
-	padding-left: 9px;
-    /*background-color: #26A65B;*/
+    padding-right: 9px;
+    padding-left: 9px;
     background-color: #0f1c17;
     border: solid 3px;
     border-color: #484a4a;
@@ -328,62 +353,60 @@ background: linear-gradient(
 #tray {
     padding-left: 16px;
     padding-right: 16px;
-	margin-right: 8px;
+    margin-right: 8px;
     border-radius: 20px 10px 10px 5px;
     border: solid 3px;
     border-color: #484a4a;
-    transition: background 0.3s ease, color 0.3s ease,
-	border-radius 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #tray:hover {
-	border-radius: 5px 20px 5px 20px;
-	color: #000000;
-	background: linear-gradient(
-    to bottom,
-    #000000 0%,    
-    #222222 1%,   
-    #777777 4%,  
-    #ffffff 50%,
-    #777777 96%,
-    #222222 99%,
-    #000000 100%   
-);
-
+    border-radius: 5px 20px 5px 20px;
+    color: #000000;
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 1%,
+        #555555 4%,
+        #999999 50%,
+        #555555 96%,
+        #222222 99%,
+        #000000 100%
+    );
 }
 
 #custom-recorder {
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 20px 20px 20px 20px;
-	border: solid 3px;
-	border-color: #484a4a;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px 20px 20px 20px;
+    border: solid 3px;
+    border-color: #484a4a;
     color: #ffffff;
     background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #cccccc 2%,
-    #888888 8%,
-    #000000 50%,
-    #888888 92%,
-    #cccccc 98%,
-    #ffffff 100%
-);
+        to bottom,
+        #999999 0%,
+        #777777 2%,
+        #666666 8%,
+        #000000 50%,
+        #666666 92%,
+        #777777 98%,
+        #999999 100%
+    );
 }
 
 #custom-recorder.recording {
-	animation-name: blink;
+    animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -396,3 +419,4 @@ background: linear-gradient(
         color: #484a4a;
     }
 }
+
