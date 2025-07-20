@@ -1,11 +1,11 @@
---[[return {
+--[[
+return {
     "EdenEast/nightfox.nvim", lazy = false, priority = 1000,
 	config= function()
 vim.cmd.colorscheme "carbonfox"
 end
-}]]-- 
-
-
+}
+	]]--
 --[[return {
     "rebelot/kanagawa.nvim", lazy = false, priority = 1000,
 	config= function()
@@ -22,7 +22,7 @@ end
   end,
 }]]--
 
-return {
+--[[return {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
     opts = {
@@ -36,6 +36,7 @@ return {
         vim.cmd("colorscheme gruvbox")
     end
 }
+]]--
 
 
 --[[return {
@@ -45,3 +46,33 @@ vim.cmd.colorscheme "tokyonight-night"
 end
 }]]--	
 
+--[[
+return {
+  "NTBBloodbath/doom-one.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme "doom-one"
+  end
+}
+]]--
+
+--[[
+return {
+  "kdheepak/monochrome.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd.colorscheme "monochrome"
+  end
+}
+]]--
+
+return {
+  "neko-night/nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+     vim.cmd.colorscheme "nekonight-fire-obsidian"
+  end
+}
