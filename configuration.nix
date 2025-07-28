@@ -9,12 +9,22 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = ["mem_sleep_default=deep"];
 
   networking.hostName = "proxy-pc"; # Define your hostname.
 
 
   networking.networkmanager.enable = true;
-  
+ networking.networkmanager = {
+    dns = "none";  
+  };
+
+  environment.etc."resolv.conf".text = ''
+    nameserver 1.1.1.1
+    nameserver 8.8.8.8
+    options edns0
+  '';
+
  services.passSecretService.enable = true;
  
   
@@ -24,7 +34,35 @@
    xwayland.enable = true;
  };
 
-#for autologin
+#For mpd
+
+#   services.mpd = {
+#    enable = true;
+#    musicDirectory = "/home/lostfromlight/Music";
+#    user = "lostfromlight";
+
+#    extraConfig = ''
+#	  auto_update "yes"
+#	  restore_paused "yes"
+#	  mixer_type "software"
+
+#	  audio_output {
+#	    type "pulse"
+#	    name "PulseAudio Output"
+
+#	  }
+
+#	  audio_output {
+#	    type "fifo"
+ #   name "ncmpcpp visualizer"
+#	    path "/tmp/mpd.fifo"
+#	    format "44100:16:1"
+#	  }
+
+#	'';
+#
+
+ # };
 
 
  #Enabling NIRI
@@ -122,8 +160,8 @@ services.tlp.settings = {
   services.xserver.enable = true;
 
   services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.autoLogin.enable = true;
-  services.displayManager.sddm.autoLogin.user = "lostfromlight";
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "lostfromlight";
   services.displayManager.defaultSession = "hyprland";
   services.desktopManager.plasma6.enable = true;
 
@@ -158,10 +196,9 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
   users.users.lostfromlight = {
     isNormalUser = true;
     description = "Naman Adhikari";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
     ];
   };
 
@@ -234,8 +271,21 @@ systemd.user.services.xdg-desktop-portal-wlr.enable = true;
     kooha
     wf-recorder
     floorp
+    hyprsunset
+    hyprcursor
     zoxide
     direnv
+    bibata-cursors
+    glib
+    octaveFull
+    libnotify
+    mpd
+    mpc
+    ncmpcpp
+    jq
+    pyprland
+    dunst
+
 
 
  ];
