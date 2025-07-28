@@ -12,6 +12,7 @@
   boot.kernelParams = ["mem_sleep_default=deep"];
 
   networking.hostName = "proxy-pc"; # Define your hostname.
+  system.stateVersion = "25.05";
 
 
   networking.networkmanager.enable = true;
@@ -180,7 +181,7 @@ hardware.bluetooth.enable = true;
 
   services.pipewire.wireplumber.enable = true;
 
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
